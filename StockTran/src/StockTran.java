@@ -1,7 +1,5 @@
 /** @author Steven Gerhard
  *  ID: sjg10009
- *  CSE 2100
- *  Lab 4
  *  Stock Buy/Sell Simulator
  *  Using First In First Out
  *  to determine capital gains/losses

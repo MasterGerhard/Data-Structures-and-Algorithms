@@ -1,7 +1,5 @@
 /** @author Steven Gerhard
  *  ID: sjg10009
- *  CSE 2100
- *  Lab 5
  *  5-1 Diophantine Equation Solver
  *  Using a Heap Priority Queue (from book)
  *  stored in an ArrayIndexList

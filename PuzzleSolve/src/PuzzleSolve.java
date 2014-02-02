@@ -1,7 +1,6 @@
 /* Steven Gerhard
  * ID: sjg10009
  * PuzzleSolve.java
- * CSE 2100 Lab 1
  */
 
 import java.util.Scanner;

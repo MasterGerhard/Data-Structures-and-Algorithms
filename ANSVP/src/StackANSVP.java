@@ -1,7 +1,6 @@
 /**
  * @author Steven Gerhard
  * ID: sjg10009
- * CSE 2100 Lab 2
  */
 
 import java.util.Arrays;

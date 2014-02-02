@@ -3,7 +3,6 @@ import java.util.Scanner;
 /** 
  * @author Steven Gerhard
  * ID: 1849880
- * CSE 2100 Lab 6
  * December 2013
  * Maze Construct Creates a Maze from given inputs
  *
