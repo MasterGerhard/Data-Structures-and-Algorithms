@@ -1,6 +1,7 @@
 /* Steven Gerhard
  * ID: sjg10009
  * PuzzleSolve.java
+ * CSE 2100 Lab 1
  */
 
 import java.util.Scanner;
@@ -24,10 +25,10 @@ public class PuzzleSolve{
 			U.addFirst(String.valueOf(i));
 		SLinkedList S = new SLinkedList();	// SolvePuzzle Parameter
 		_numSolutions = 0; // used to tell if solution found
-		System.out.println("Unique Letters: " + _alphabet);
+		System.out.println("Unique Letters in Equation: " + _alphabet);
 		if(_k > 10 || _k < 1){
 			// only have 10 digits to work with
-			System.out.println("Puzzle Not Solvable");
+			System.out.println("Puzzle Not Solvable For Integer Values 0-9");
 		}
 		else{
 			SolvePuzzle(0,S,U);
@@ -64,7 +65,9 @@ public class PuzzleSolve{
 	// and prints
 	// if the integers solve the puzzle
 	public void Solution(SLinkedList sol){
+		
 		String solution = sol.getList();
+		String output = "";
 		String result = _userInput;
 		for(int i = 0; i < _k; i++){	// for 0 to < k
 			String al = _alphabet.substring(i,i+1);	// pick one letter from puzzle
@@ -89,8 +92,12 @@ public class PuzzleSolve{
 		}
 		if(sums == total){
 			if(_numSolutions == 0)
-				System.out.println("Solution Found:");
-			System.out.println(solution);
+				System.out.println("Solution(s) Found:");
+			output = "";
+			for(int i = 0; i < solution.length(); i++) {
+				output = output + _alphabet.substring(i,i+1) + "=" + solution.substring(i,i+1) + "; ";
+			}
+			System.out.println(output);
 			_numSolutions++;
 		}
 		return;
